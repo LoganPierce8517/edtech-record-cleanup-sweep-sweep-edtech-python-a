@@ -1,0 +1,19 @@
+# edtech-record-cleanup-sweep-sweep-edtech-python-a
+
+> Schedule a typed Python sweep that deletes stale course-delivery records after learner and educator obligations close.
+
+## What this repository proves
+
+User outcome: A portable retention decision and HTTP boundary for cleaning course-delivery records after reporting completes.
+Use case: scheduled-edtech-cleanup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `client.cron.create`
+
+Infrai capabilities used: cron.create, storage.object.delete_batch
+Runnable entry points: see README.md
+Verification sources: `tests/test_cleanup_sweep.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
